@@ -1,0 +1,120 @@
+<html>
+<head>
+
+<!-- Libriaries -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://gia.guim.co.uk/2013/05/alaska/interactive/js/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+<script type="text/javascript" src="mapa.js"></script>
+<script src="topojson.js"></script>
+
+<!-- DATA -->
+<script src="http://gia.guim.co.uk/2013/05/alaska/interactive/data/canada-topo.js"></script>
+<script src="http://gia.guim.co.uk/2013/05/alaska/interactive/data/russia-topo.js"></script>
+<script src="colombia.js"></script>
+
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+
+<div class='title-content tc-tl white-screen'>
+	<div class='tc-tl-wrapper'>
+	<h1>The at risk list</h1>
+	<p class='subhead'>Alaska's indigenous communities, mostly located in isolated and poor areas, are facing disaster as the ice melts.</p>
+
+	<div id='map-nav'>
+		<div class='gia-tabbed-button ak-map-btn' id='btn-pop-density'>Population</div>
+		<div class='gia-tabbed-button ak-map-btn gia-tabbed-button-selected' id='btn-ak-native'>Alaskan native</div>
+		<div class='gia-tabbed-button ak-map-btn' id='btn-ak-income'>Income</div>
+	</div>
+	
+	<div id='map-census-key'>
+		<div id='key-header'></div>
+		<div class='key-block' id='mk-1'>
+			<div class='key-color-block'></div>
+			<div class='key-value'></div>
+		</div>
+
+		<div class='key-block' id='mk-2'>
+			<div class='key-color-block'></div>
+			<div class='key-value'></div>
+		</div>
+
+		<div class='key-block' id='mk-3'>
+			<div class='key-color-block'></div>
+			<div class='key-value'></div>
+		</div>
+
+		<div class='key-block' id='mk-4'>
+			<div class='key-color-block'></div>
+			<div class='key-value'></div>
+		</div>
+
+		<div class='key-block' id='mk-5'>
+			<div class='key-color-block'></div>
+			<div class='key-value'></div>
+		</div>
+
+		<div class='key-block' id='mk-6'>
+			<div class='key-color-block'></div>
+			<div class='key-value'></div>
+		</div>
+		<div class='key-row'>
+			<div id='village-dot'></div>
+			<div id='village-lbl'>186 endangered villages</div>
+			
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	
+	<!--[if lte IE 8]>
+
+
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+	<div id='map-census-popup'>
+			<div id='popup-title'>&nbsp;</div>
+
+
+			<div class='map-popup-row' id='popup-shape-info'>
+				<div class='map-popup-type'></div>
+				<div id='map-popup-color'></div>
+				<div class='map-popup-value'></div>
+			</div>
+
+			<div class='map-popup-row' id='popup-total-pop'>
+				<div class='map-popup-type'>Total population</div>
+				<div class='map-popup-value'></div>
+			</div>
+
+			<div class='map-popup-row' id='popup-age-dist'>
+				<div class='map-popup-type'>Age distribution</div>
+			</div>
+			<div id='map-census-chart'></div>
+		</div>
+	<!--<![endif]-->
+	</div>
+	
+</div>
+
+
+						<div id='map-census-container'>
+
+							<div id='map-census'>
+
+							<!--[if lte IE 8]>
+								<div id='panel-pop-density' class='panel-census'><img src='http://gia.guim.co.uk/2013/05/alaska/responsive/img/4_census-pop.png' /></div>
+								<div id='panel-ak-native' class='panel-census panel-selected'><img src='http://gia.guim.co.uk/2013/05/alaska/responsive/img/4_census-native.png' /></div>
+								<div id='panel-ak-income' class='panel-census'><img src='http://gia.guim.co.uk/2013/05/alaska/responsive/img/4_census-income.png' /></div>
+
+							<![endif]-->
+							</div>
+						</div>
+
+
+
+</body>
+
+</html>
