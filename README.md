@@ -20,6 +20,6 @@ git clone https://github.com/phact/ProjDistribucionNacional.git
 
 python -m httpSimpleServer
 
-*abrir con browser**
+**abrir con browser**
 
 http://localhost:8000/mapa.html
