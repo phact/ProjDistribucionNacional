@@ -12,14 +12,14 @@ Features:
 ##Para empezar
 instalar git y python version 2.x (u otro servidor web)
 
-*descargar codigo*
+**descargar codigo**
 
 git clone https://github.com/phact/ProjDistribucionNacional.git
 
-*publicar hoja*
+**publicar hoja**
 
 python -m httpSimpleServer
 
-*abrir con browser*
+*abrir con browser**
 
 http://localhost:8000/mapa.html
