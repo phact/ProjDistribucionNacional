@@ -18,7 +18,7 @@ git clone https://github.com/phact/ProjDistribucionNacional.git
 
 **publicar hoja**
 
-python -m httpSimpleServer
+python -m SimpleHTTPServer
 
 **abrir con browser**
 
